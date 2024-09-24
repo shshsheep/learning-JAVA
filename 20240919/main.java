@@ -4,7 +4,7 @@
 /**
  *
  * @author student
- */
+*/
 public class BMI {
     public static void main(String[] args){
         double height = 162;
@@ -14,8 +14,8 @@ public class BMI {
         System.out.println(name + "\t" + bmi);
                 
     }
-    
-// run-single = JHYang	19.051973784484073
+}
+// output run-single = JHYang	19.051973784484073
 
 // "\t" 跳脫指令
 
