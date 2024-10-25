@@ -1,4 +1,6 @@
 //陣列 Arrays
+//Arrayscopy
+//複製
 
 package java819.six;
 
@@ -65,6 +67,7 @@ public class Lesson6_1 {
 
 //---------------------------------------------------//
 //Arrays.sort 
+//排序
 
 package java819.six;
 
