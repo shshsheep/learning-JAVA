@@ -1,5 +1,34 @@
 package java819.eight;
 
+public class Lesson8_2 {
+
+	public static void main(String[] args) {
+		String s1 = new String("Java");
+		String s2 = new String("Java");
+		String s3 = "Java";
+		String s4 = "Java";
+		
+		StringBuilder s5 = new StringBuilder("Java");
+		StringBuilder s6 = new StringBuilder("Java");
+		
+		System.out.println("判斷記憶體位置是否相同 s1 == s2 "+(s1 == s2)); //false
+		System.out.println("判斷記憶體位置是否相同 s3 == s4 "+(s3 == s4)); //true
+		System.out.println("判斷字串內容是否相同 s1.equals(s2) " +s1.equals(s2));//true
+		System.out.println("判斷字串內容是否相同 s3.equals(s4) " +s3.equals(s4));//true
+		
+		
+		//object的equals是判斷記憶體位置的(==)  
+		System.out.println("s5.equals(s6) " +s5.equals(s6));//調用object的equals 結果為false
+		System.out.println("s5.equals(s6) " +s5.toString().equals(s6.toString()));//調用String的equals 結果為true
+		//從StringBuilder轉換成String(.toString)再去做equals的判斷 這樣就是在判斷字串內容
+		
+	}
+
+}
+
+
+package java819.eight;
+
 public class Lesson8_1 {
 
 	public static void main(String[] args) {
