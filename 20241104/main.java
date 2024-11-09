@@ -10,6 +10,7 @@ class Shirt{
 	public String description;
 	//建立建構子 Constructor
 	public Shirt(char color,double price,String description) {
+		this.shirtID = calculateShirtID();
 		this.colorCode=color;
 		this.price=price;
 		this.description=description;
@@ -41,6 +42,8 @@ class Person{
 		
 	}
 }
+//當無參數的建構子+ return types 則會變成方法 就需要再main裡面呼叫
+
 
 public class Lesson11_1 {
 
@@ -56,6 +59,8 @@ public class Lesson11_1 {
 		//建立有三個參數的Shirt類別物件
 		Shirt s2=new Shirt('R',2000,"秋冬最新款");
 		s2.displayInformation();
+		Shirt s3=new Shirt('B',1000,"夏季最新款");
+		s3.displayInformation();
 		
 		
 		
